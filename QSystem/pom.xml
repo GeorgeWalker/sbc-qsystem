@@ -5,6 +5,12 @@
    <artifactId>qsystem</artifactId>
    <version>1.0-SNAPSHOT</version>
    <packaging>jar</packaging>
+   <distributionManagement>
+   <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://nexus-servicebc-customer-flow-tools.pathfinder.gov.bc.ca/nexus/content/repositories/snapshots</url>
+   </snapshotRepository>
+  </distributionManagement>
    <dependencies>
         <dependency>
             <groupId>com.sun</groupId>
@@ -399,6 +405,14 @@
             <systemPath>${env.JAVA_HOME}/lib/tools.jar</systemPath>
         </dependency>
 		</dependencies>
+</plugin>
+	   <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.2</version>
+        <configuration>
+			<classesDirectory>build/classes</classesDirectory>
+        </configuration>
       </plugin>
     </plugins>
   </build>
