@@ -22,15 +22,16 @@
   <mirrors>
 <!--	<mirror><id>sti-mirror</id><url>${env.MAVEN_MIRROR_URL}</url><mirrorOf>external:*,!local-maven-repo,!ca.bc.gov.*</mirrorOf>  </mirror> -->
  
-  </mirrors>   
-  <profiles>
-    <servers>
+  </mirrors> 
+<servers>
     <server>
       <id>nexus-snapshots</id>
       <username>${env.NEXUS_USER}</username>
       <password>${env.NEXUS_PASSWORD}</password>
     </server>
-  </servers>
+  </servers>  
+  <profiles>
+    
     <!-- JBoss EAP Maven repository -->
     <profile>
       <id>jboss-eap-repository</id>
