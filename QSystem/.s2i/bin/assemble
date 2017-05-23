@@ -1,0 +1,5 @@
+# run the stock assemble script
+/usr/local/sti/assemble
+
+# call mvn deploy so that QSystem.jar is sent to the local nexus.
+mvn deploy
