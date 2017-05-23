@@ -8,4 +8,4 @@
 #
 
 #!/bin/bash
-exec /wildfly/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0 -Djboss.home.dir=/opt/app-root/src/source/dist/
+exec /wildfly/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0 -Djboss.server.base.dir=/opt/app-root/src/source/dist/ -Djboss.server.log.dir=/tmp
