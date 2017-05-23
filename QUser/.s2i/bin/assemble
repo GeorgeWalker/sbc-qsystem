@@ -2,7 +2,7 @@
 
 PID_FILE=/tmp/wildfly.pid
 ARTIFACT_DIR=dist
-
+HOME=/opt/app-root/src
 
 # restore maven dependencies downloaded in a previous build,
 # so they do not have to be downloaded again.
@@ -214,12 +214,12 @@ ADMIN=admin
 PASSWORD=passw0rd_
 
 # Source code provided to S2I is at ${HOME}
-LOCAL_SOURCE_DIR=${HOME}
+LOCAL_SOURCE_DIR=${HOME}/source
 mkdir -p $LOCAL_SOURCE_DIR
 
 # the subdirectory within LOCAL_SOURCE_DIR from where we should copy build
 # artifacts (*.war, *.jar)
-ARTIFACT_DIR=${ARTIFACT_DIR:-target}
+ARTIFACT_DIR=dist
 
 # Resulting WAR files will be deployed to /wildfly/standalone/deployments
 DEPLOY_DIR=/wildfly/standalone/deployments
