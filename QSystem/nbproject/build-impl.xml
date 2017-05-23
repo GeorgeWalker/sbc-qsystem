@@ -1044,11 +1044,11 @@ is divided into following sections:
     <target name="-post-jar">
 	    <mkdir dir="${dist.jar.dir}../../../icons"/>		
 		<copy todir="${dist.jar.dir}../../../icons">
-            <fileset dir="${basedir}/icons" includes="*"/>
+            <fileset dir="${basedir}/icons" includes="**"/>
         </copy>
 		<mkdir dir="${dist.jar.dir}../../../www"/>		
 		<copy todir="${dist.jar.dir}../../../www">
-            <fileset dir="${basedir}/www" includes="*"/>
+            <fileset dir="${basedir}/www" includes="**"/>
         </copy>
 		<mkdir dir="${dist.jar.dir}../../../plugins"/>		
 		<copy todir="${dist.jar.dir}../../../plugins">
