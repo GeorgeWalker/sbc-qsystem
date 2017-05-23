@@ -29,3 +29,5 @@ hs_err_pid*
 /QUser/target/
 !/QUser/lib/CopyLibs/*.jar
 !/QUser/lib/*.jar
+!/QSystem/plugins/*.jar
+!/QSystem/plugins/*.war
