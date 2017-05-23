@@ -25,7 +25,6 @@
   </mirrors>   
   <profiles>
     <servers>
-    ...
     <server>
       <id>nexus</id>
       <username>${env.NEXUS_USER}</username>
