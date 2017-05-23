@@ -350,12 +350,6 @@
     <artifactId>zkbind</artifactId>
     <version>8.0.2.2</version>
 </dependency>
-<!-- pull in the QSystem jar. -->
-	<dependency>
-         <groupId>ru.apertum</groupId>
-         <artifactId>qsystem</artifactId>
-         <version>1.0-SNAPSHOT</version>
-        </dependency>
 
     </dependencies>
     
