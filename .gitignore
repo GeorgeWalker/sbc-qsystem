@@ -31,3 +31,9 @@ hs_err_pid*
 !/QUser/lib/*.jar
 !/QSystem/plugins/*.jar
 !/QSystem/plugins/*.war
+/QSmartboardPlugin-master/build/
+/QSmartboardPlugin-master/dist/
+/QSmartboardPlugin-master/nbproject/private/
+/QSmartboardPlugin/build/
+/QSmartboardPlugin/dist/
+/QSmartboardPlugin/nbproject/private/
