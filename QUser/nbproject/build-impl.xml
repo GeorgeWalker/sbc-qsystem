@@ -1184,6 +1184,7 @@ exists or setup the property manually. For example like this:
         <copyfiles files="${file.reference.zkex.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${file.reference.zul.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${file.reference.zweb.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+		<copyfiles files="${reference.QSystem.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
     </target>
     <target depends="init" if="dist.ear.dir" name="-clean-webinf-lib">
         <delete dir="${build.web.dir}/WEB-INF/lib"/>
@@ -1196,7 +1197,7 @@ exists or setup the property manually. For example like this:
         </jar>
     </target>
     <target name="-post-dist">
-	     <copy todir="${dist.jar.dir}../../../QSystem/plugins">
+	     <copy todir="${dist.jar.dir}../../../../plugins">
             <fileset dir="${dist.jar.dir}" includes="**"/>
         </copy>
         <!-- Empty placeholder for easier customization. -->
