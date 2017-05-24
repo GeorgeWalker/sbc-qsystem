@@ -1053,9 +1053,9 @@ is divided into following sections:
         </copy>
 		<copy todir="${dist.jar.dir}../../../plugins">
             <fileset dir="${basedir}/plugins" includes="**"/>
-        </copy>	    
+        </copy>
 		<copy todir="${dist.jar.dir}../../../languages">
-            <fileset dir="${basedir}/languages" includes="**"/>
+		    <fileset dir="${basedir}/languages" includes="**"/>
         </copy>
 		<copy todir="${dist.jar.dir}../../../config">
             <fileset dir="${basedir}/config" includes="**"/>
