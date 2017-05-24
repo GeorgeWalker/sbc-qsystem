@@ -1075,7 +1075,9 @@ exists or setup the property manually. For example like this:
         <copyfiles files="${file.reference.zml.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${file.reference.zul.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${file.reference.zuljsp.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
-        <copyfiles files="${file.reference.zweb.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${file.reference.zweb.jar}" todir="${build.web.dir}/WEB-INF/lib"/>		
+		<copyfiles files="${reference.QSystem.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+		<copyfiles files="${reference.QSmartboardPlugin.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
     </target>
     <target depends="init" if="dist.ear.dir" name="-clean-webinf-lib">
         <delete dir="${build.web.dir}/WEB-INF/lib"/>
