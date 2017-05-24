@@ -12,5 +12,7 @@
     <modules>
         <module>QSystem</module>
         <module>QUser</module>
+		<module>QSmartboardPlugin</module>
+		<module>QSmartboard</module>
     </modules>
 </project>
