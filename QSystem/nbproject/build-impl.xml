@@ -1045,30 +1045,25 @@ is divided into following sections:
 	    <copy todir="${dist.jar.dir}../../../dist">
             <fileset dir="${dist.jar.dir}" includes="**"/>
         </copy>
-	    <mkdir dir="${dist.jar.dir}../../../dist/icons"/>		
-		<copy todir="${dist.jar.dir}../../../dist/icons">
+	    <copy todir="${dist.jar.dir}../../dist/icons">
             <fileset dir="${basedir}/icons" includes="**"/>
         </copy>
-		<mkdir dir="${dist.jar.dir}../../../dist/www"/>		
 		<copy todir="${dist.jar.dir}../../dist/www">
             <fileset dir="${basedir}/www" includes="**"/>
         </copy>
-		<mkdir dir="${dist.jar.dir}../../../plugins"/>		
 		<copy todir="${dist.jar.dir}../../plugins">
             <fileset dir="${basedir}/plugins" includes="*"/>
-        </copy>
-	    <mkdir dir="${dist.jar.dir}../../../languages"/>		
+        </copy>	    
 		<copy todir="${dist.jar.dir}../../languages">
             <fileset dir="${basedir}/languages" includes="*.jar"/>
         </copy>
-		<mkdir dir="${dist.jar.dir}../../../config"/>
 		<copy todir="${dist.jar.dir}../../../config">
             <fileset dir="${basedir}/config" includes="**"/>
         </copy>
-		<copy todir="${dist.jar.dir}../../../dist/config">
+		<copy todir="${dist.jar.dir}../../dist/config">
             <fileset dir="${basedir}/config" includes="**"/>
         </copy>
-		<mkdir dir="${dist.jar.dir}../../../dist/logs"/>	
+		<mkdir dir="${dist.jar.dir}../../dist/logs"/>	
     </target>
     <target depends="init,compile,-pre-jar,-do-jar-without-libraries,-do-jar-with-libraries,-post-jar" name="-do-jar"/>
     <target depends="init,compile,-pre-jar,-do-jar,-post-jar" description="Build JAR." name="jar"/>
