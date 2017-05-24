@@ -350,11 +350,7 @@
     <artifactId>zkbind</artifactId>
     <version>8.0.2.2</version>
 </dependency>
-<dependency>
-    <groupId>org.zkoss.zk</groupId>
-    <artifactId>zkex</artifactId>
-    <version>8.0.2.2</version>
-</dependency>
+
 	<dependency>
          <groupId>ru.apertum</groupId>
          <artifactId>qsystem</artifactId>
