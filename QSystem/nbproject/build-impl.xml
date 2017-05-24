@@ -1052,10 +1052,10 @@ is divided into following sections:
             <fileset dir="${basedir}/www" includes="**"/>
         </copy>
 		<copy todir="${dist.jar.dir}../../plugins">
-            <fileset dir="${basedir}/plugins" includes="*"/>
+            <fileset dir="${basedir}/plugins" includes="**"/>
         </copy>	    
 		<copy todir="${dist.jar.dir}../../languages">
-            <fileset dir="${basedir}/languages" includes="*.jar"/>
+            <fileset dir="${basedir}/languages" includes="**"/>
         </copy>
 		<copy todir="${dist.jar.dir}../../../config">
             <fileset dir="${basedir}/config" includes="**"/>
@@ -1064,6 +1064,7 @@ is divided into following sections:
             <fileset dir="${basedir}/config" includes="**"/>
         </copy>
 		<mkdir dir="${dist.jar.dir}../../dist/logs"/>	
+		<chmod perm="777" dir="${dist.jar.dir}../../dist/logs" type="dir"/>
     </target>
     <target depends="init,compile,-pre-jar,-do-jar-without-libraries,-do-jar-with-libraries,-post-jar" name="-do-jar"/>
     <target depends="init,compile,-pre-jar,-do-jar,-post-jar" description="Build JAR." name="jar"/>
