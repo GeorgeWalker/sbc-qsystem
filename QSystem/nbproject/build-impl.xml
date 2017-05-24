@@ -1051,10 +1051,10 @@ is divided into following sections:
 		<copy todir="${dist.jar.dir}../../../dist/www">
             <fileset dir="${basedir}/www" includes="**"/>
         </copy>
-		<copy todir="${dist.jar.dir}../../../plugins">
+		<copy todir="${dist.jar.dir}../../../dist/plugins">
             <fileset dir="${basedir}/plugins" includes="**"/>
         </copy>
-		<copy todir="${dist.jar.dir}../../../languages">
+		<copy todir="${dist.jar.dir}../../../dist/languages">
 		    <fileset dir="${basedir}/languages" includes="**"/>
         </copy>
 		<copy todir="${dist.jar.dir}../../../config">
