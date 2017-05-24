@@ -6,5 +6,5 @@
 # For more information see the documentation:
 #	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
 #
-
-exec java -Djava.security.egd=file:/dev/./urandom -jar /opt/app-root/src/source/QSystem/dist/QSystem.jar -t --http-server 8080 $APP_OPTIONS
+cd /opt/app-root/src/source/dist
+exec java -Djava.security.egd=file:/dev/./urandom -jar /opt/app-root/src/source/dist/QSystem.jar -t --http-server 8080 $APP_OPTIONS
