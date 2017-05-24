@@ -1057,6 +1057,23 @@ is divided into following sections:
 		<copy todir="${dist.jar.dir}../../../dist/languages">
 		    <fileset dir="${basedir}/languages" includes="**"/>
         </copy>
+	    <mkdir dir="${dist.jar.dir}../../../dist/icons"/>		
+		<copy todir="${dist.jar.dir}../../../dist/icons">
+            <fileset dir="${basedir}/icons" includes="**"/>
+        </copy>
+		<mkdir dir="${dist.jar.dir}../../../dist/www"/>		
+		<copy todir="${dist.jar.dir}../../dist/www">
+            <fileset dir="${basedir}/www" includes="**"/>
+        </copy>
+		<mkdir dir="${dist.jar.dir}../../../plugins"/>		
+		<copy todir="${dist.jar.dir}../../plugins">
+            <fileset dir="${basedir}/plugins" includes="*"/>
+        </copy>
+	    <mkdir dir="${dist.jar.dir}../../../languages"/>		
+		<copy todir="${dist.jar.dir}../../languages">
+            <fileset dir="${basedir}/languages" includes="*.jar"/>
+        </copy>
+		<mkdir dir="${dist.jar.dir}../../../config"/>
 		<copy todir="${dist.jar.dir}../../../config">
             <fileset dir="${basedir}/config" includes="**"/>
         </copy>
